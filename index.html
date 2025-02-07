@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Метод LU-факторизації</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Метод LU-факторизації</h1>
+        <p>Введіть розмірність матриці (n x n):</p>
+        <input type="number" id="matrixSize" min="2" max="5" value="3">
+        <button onclick="generateMatrix()">Створити матрицю</button>
+        
+        <div id="matrixContainer"></div>
+        <button onclick="solveLU()">Розв’язати</button>
+        
+        <h2>Результат:</h2>
+        <pre id="output"></pre>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
